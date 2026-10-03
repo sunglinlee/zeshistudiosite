@@ -36,6 +36,8 @@
     --muted:#9AA3AA;
     --accent:#D4AE78;
   }
+  :root[data-theme="dark"] .logo{filter:brightness(0) invert(0.92);}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logo{filter:brightness(0) invert(0.92);}}
   *{box-sizing:border-box;}
   body{
     margin:0;
@@ -51,7 +53,7 @@
   a{color:inherit;text-decoration:none;}
   .en{font-family:"Cormorant Garamond",serif;}
   .wrap{width:100%;max-width:380px;text-align:center;}
-  .logo{width:96px;height:auto;margin:0 auto 18px;display:block;}
+  .logo{width:84px;height:auto;margin:0 auto 18px;display:block;}
   h1{margin:0;font-size:34px;font-weight:600;letter-spacing:0.06em;}
   .tracked{margin-top:8px;font-size:13px;letter-spacing:0.32em;color:var(--ink-2);}
   .tagline{margin-top:16px;font-size:14px;letter-spacing:0.1em;color:var(--muted);}
@@ -77,7 +79,7 @@
 </head>
 <body>
 <div class="wrap">
-  <img class="logo" src="../logo-mark.jpg" alt="澤拾 Studio">
+  <img class="logo" src="../logo-mark.png" alt="澤拾 Studio">
   <h1>澤拾</h1>
   <div class="en tracked">ZE&nbsp;&nbsp;SHI&nbsp;&nbsp;STUDIO</div>
   <div class="tagline">拾取靈感 × 累積價值</div>
