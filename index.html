@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>澤拾 Ze Shi Studio</title>
+<meta name="description" content="澤拾工作室｜商業攝影與影像、木作工藝、軟體與網站開發。拾取靈感 × 累積價值。">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <style>
+    :root{
+      --bg:#F2EFE8;
+      --bg-alt:#EAE4D7;
+      --ink:#2E3D4E;
+      --ink-2:#44586A;
+      --ink-3:#8FA3AF;
+      --ink-4:#C3D0D4;
+      --accent:#B48B52;
+      --line:rgba(46,61,78,0.16);
+      --muted:#6E6A5E;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Serif TC",serif;-webkit-font-smoothing:antialiased;}
+    a{color:var(--ink);text-decoration:none;}
+    a:hover{color:var(--accent);}
+    .en{font-family:"Cormorant Garamond",serif;}
+    .tracked{letter-spacing:0.32em;}
+    .hairline{border:none;border-top:1px solid var(--line);margin:0;}
+    .container{max-width:1180px;margin:0 auto;padding:0 40px;}
+    .eyebrow{font-family:"Cormorant Garamond",serif;letter-spacing:0.38em;font-size:13px;color:var(--ink-2);text-transform:uppercase;}
+    section{position:relative;}
+    .about-grid{display:grid;grid-template-columns:120px 1fr;gap:60px;align-items:start;}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+    .services-grid > div{border-right:1px solid var(--line);}
+    .services-grid > div:last-child{border-right:none;}
+    .works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;}
+    .nav-links{display:flex;gap:36px;}
+    @media (max-width:900px){
+      .container{padding:0 24px;}
+      .about-grid{grid-template-columns:1fr;gap:24px;}
+      .about-grid > div:first-child{writing-mode:horizontal-tb !important;letter-spacing:0.1em !important;font-size:12px !important;}
+      .services-grid{grid-template-columns:1fr;row-gap:56px;}
+      .services-grid > div{border-right:none !important;border-bottom:1px solid var(--line);padding-bottom:44px !important;}
+      .services-grid > div:last-child{border-bottom:none;padding-bottom:0 !important;}
+      .works-grid{grid-template-columns:repeat(2,1fr);}
+      .contact-grid{grid-template-columns:1fr;gap:56px;}
+      .nav-links{gap:20px;}
+      .nav-links a{font-size:12.5px !important;}
+    }
+    @media (max-width:560px){
+      .works-grid{grid-template-columns:1fr;}
+    }
+  </style>
+
+</head>
+<body>
+
+
+<div style="width:100%;min-height:100vh;background:var(--bg);overflow-x:hidden;">
+
+  <!-- NAV -->
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(242,239,232,0.86);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:74px;">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <img src="logo-mark.jpg" alt="澤拾 Studio" style="height:34px;width:auto;display:block;">
+        <span class="en tracked" style="font-size:15px;color:var(--ink);">ZE SHI STUDIO</span>
+      </div>
+      <div class="nav-links">
+        <a href="#services" style="font-size:14px;letter-spacing:0.08em;">服務</a>
+        <a href="#works" style="font-size:14px;letter-spacing:0.08em;">作品</a>
+        <a href="#about" style="font-size:14px;letter-spacing:0.08em;">關於</a>
+        <a href="#contact" style="font-size:14px;letter-spacing:0.08em;">聯絡</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section style="padding-top:74px;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;">
+    <div style="position:relative;z-index:2;padding:60px 24px 0;">
+      <img src="logo-full.jpg" alt="澤拾 Ze Shi Studio" style="width:min(72vw,460px);height:auto;display:block;margin:0 auto;">
+      <div style="margin-top:34px;display:flex;align-items:center;justify-content:center;gap:16px;">
+        <span class="hairline" style="display:inline-block;width:44px;border-top:1px solid var(--ink-2);"></span>
+        <span style="font-size:16px;letter-spacing:0.14em;color:var(--muted);">拾取靈感&nbsp;×&nbsp;累積價值</span>
+        <span class="hairline" style="display:inline-block;width:44px;border-top:1px solid var(--ink-2);"></span>
+      </div>
+      <div class="en" style="margin-top:8px;font-style:italic;font-size:16px;color:var(--ink-2);">Collect Inspiration&nbsp;·&nbsp;Create Value</div>
+    </div>
+
+    <!-- watercolor mountain backdrop -->
+    <svg viewBox="0 0 1200 420" preserveAspectRatio="none" style="position:absolute;left:0;right:0;bottom:0;width:100%;height:38vh;min-height:220px;z-index:1;">
+      <path d="M0,420 L0,300 C160,220 260,260 380,200 C480,150 560,230 680,190 C820,140 900,240 1040,210 C1120,192 1160,220 1200,200 L1200,420 Z" fill="var(--ink-4)" opacity="0.55"/>
+      <path d="M0,420 L0,340 C140,300 240,330 360,280 C500,222 600,300 760,270 C900,244 1000,300 1200,270 L1200,420 Z" fill="var(--ink-3)" opacity="0.55"/>
+      <path d="M0,420 L0,378 C180,350 320,372 460,344 C620,312 760,368 940,340 C1040,324 1120,346 1200,332 L1200,420 Z" fill="var(--ink-2)" opacity="0.5"/>
+      <path d="M0,404 C220,388 420,398 620,388 C840,378 1000,396 1200,384" stroke="var(--ink)" stroke-width="1.4" fill="none" opacity="0.35"/>
+    </svg>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- ABOUT -->
+  <section id="about" style="padding:120px 0;">
+    <div class="container about-grid">
+      <div style="writing-mode:vertical-rl;font-size:15px;letter-spacing:0.5em;color:var(--ink-2);justify-self:start;">拾取靈感&nbsp;×&nbsp;累積價值</div>
+      <div>
+        <div class="eyebrow">ABOUT</div>
+        <p style="margin:22px 0 0;font-size:clamp(26px,3.4vw,38px);line-height:1.7;font-weight:500;max-width:720px;">以技術拾取價值，<br>用作品留下痕跡。</p>
+        <p style="margin-top:28px;font-size:16px;line-height:2;color:var(--muted);max-width:560px;">澤拾工作室是高雄的一人創作工作室，橫跨影像、木作與軟體三個領域。相信好的作品來自對細節的堅持，也相信每一次拾取的靈感，最終都會累積成獨有的價值。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- SERVICES -->
+  <section id="services" style="padding:120px 0;background:var(--bg-alt);">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="eyebrow">SERVICES</div>
+        <h2 style="margin:18px 0 0;font-size:clamp(28px,3.6vw,42px);font-weight:600;">服務項目</h2>
+      </div>
+
+      <div class="services-grid" style="margin-top:72px;">
+
+        <div style="padding:0 40px;text-align:center;">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto;">
+            <path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+            <circle cx="12" cy="13" r="3.4"/>
+          </svg>
+          <h3 style="margin:22px 0 0;font-size:19px;font-weight:600;letter-spacing:0.04em;">商業攝影與影像</h3>
+          <div class="en" style="margin-top:4px;font-size:12px;letter-spacing:0.18em;color:var(--ink-2);">PHOTOGRAPHY & VIDEO</div>
+          <p style="margin-top:18px;font-size:14.5px;line-height:1.9;color:var(--muted);">品牌形象、產品與人像攝影，以及短片、紀錄與商業影像製作，從企劃到後期一手包辦。</p>
+        </div>
+
+        <div style="padding:0 40px;text-align:center;">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto;">
+            <path d="M3 20 L11 4 L15 12 L9 20 Z"/>
+            <path d="M13 8 L19 8 L21 12 L17 20 L13 20"/>
+          </svg>
+          <h3 style="margin:22px 0 0;font-size:19px;font-weight:600;letter-spacing:0.04em;">木作工藝</h3>
+          <div class="en" style="margin-top:4px;font-size:12px;letter-spacing:0.18em;color:var(--ink-2);">CUSTOM WOODWORK</div>
+          <p style="margin-top:18px;font-size:14.5px;line-height:1.9;color:var(--muted);">客製化家具與雕刻小物，依空間與需求量身打造，保留手作紋理與溫度。</p>
+        </div>
+
+        <div style="padding:0 40px;text-align:center;">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto;">
+            <path d="M8 8 L3 12.5 L8 17"/>
+            <path d="M16 8 L21 12.5 L16 17"/>
+            <path d="M13.5 6 L10.5 19"/>
+          </svg>
+          <h3 style="margin:22px 0 0;font-size:19px;font-weight:600;letter-spacing:0.04em;">軟體與網站開發</h3>
+          <div class="en" style="margin-top:4px;font-size:12px;letter-spacing:0.18em;color:var(--ink-2);">SOFTWARE & WEB</div>
+          <p style="margin-top:18px;font-size:14.5px;line-height:1.9;color:var(--muted);">小型網站、工具與應用程式開發，適合個人品牌與小型企業的數位需求。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- WORKS -->
+  <section id="works" style="padding:120px 0;">
+    <div class="container">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+        <div>
+          <div class="eyebrow">SELECTED WORKS</div>
+          <h2 style="margin:18px 0 0;font-size:clamp(28px,3.6vw,42px);font-weight:600;">作品</h2>
+        </div>
+        <div style="font-size:14px;color:var(--ink-2);letter-spacing:0.06em;">作品集籌備中，敬請期待</div>
+      </div>
+
+      <div class="works-grid" style="margin-top:56px;">
+        <div style="aspect-ratio:4/5;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;">
+          <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">COMING&nbsp;SOON</span>
+        </div>
+        <div style="aspect-ratio:4/5;background:var(--ink-4);display:flex;align-items:center;justify-content:center;">
+          <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">COMING&nbsp;SOON</span>
+        </div>
+        <div style="aspect-ratio:4/5;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;">
+          <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">COMING&nbsp;SOON</span>
+        </div>
+        <div style="aspect-ratio:4/5;background:var(--ink-4);display:flex;align-items:center;justify-content:center;">
+          <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">COMING&nbsp;SOON</span>
+        </div>
+        <div style="aspect-ratio:4/5;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;">
+          <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">COMING&nbsp;SOON</span>
+        </div>
+        <div style="aspect-ratio:4/5;background:var(--ink-4);display:flex;align-items:center;justify-content:center;">
+          <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">COMING&nbsp;SOON</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding:120px 0;background:var(--bg-alt);">
+    <div class="container contact-grid">
+      <div>
+        <div class="eyebrow">CONTACT</div>
+        <h2 style="margin:18px 0 0;font-size:clamp(28px,3.6vw,42px);font-weight:600;">聯絡</h2>
+        <p style="margin-top:20px;font-size:15px;line-height:1.9;color:var(--muted);max-width:400px;">無論是攝影、木作或軟體案子，歡迎來信聊聊你的想法。</p>
+
+        <div style="margin-top:44px;display:flex;flex-direction:column;gap:22px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>
+            <span style="font-size:15px;">高雄市</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+            <span class="en" style="font-size:15px;">zeshistudio@gmail.com</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 4 5.7 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.7-4-9s1.4-6.4 4-9z"/></svg>
+            <span class="en" style="font-size:15px;">www.zeshi-studio.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;flex-direction:column;gap:26px;">
+          <label style="display:block;">
+            <div style="font-size:12px;letter-spacing:0.14em;color:var(--ink-2);margin-bottom:8px;">姓名</div>
+            <input type="text" style="width:100%;border:none;border-bottom:1px solid var(--line);background:transparent;padding:8px 0;font-size:16px;font-family:'Noto Serif TC',serif;color:var(--ink);outline:none;">
+          </label>
+          <label style="display:block;">
+            <div style="font-size:12px;letter-spacing:0.14em;color:var(--ink-2);margin-bottom:8px;">EMAIL</div>
+            <input type="email" style="width:100%;border:none;border-bottom:1px solid var(--line);background:transparent;padding:8px 0;font-size:16px;font-family:'Noto Serif TC',serif;color:var(--ink);outline:none;">
+          </label>
+          <label style="display:block;">
+            <div style="font-size:12px;letter-spacing:0.14em;color:var(--ink-2);margin-bottom:8px;">訊息</div>
+            <textarea rows="4" style="width:100%;border:none;border-bottom:1px solid var(--line);background:transparent;padding:8px 0;font-size:16px;font-family:'Noto Serif TC',serif;color:var(--ink);outline:none;resize:none;"></textarea>
+          </label>
+          <button style="align-self:flex-start;margin-top:8px;background:var(--ink);color:var(--bg);border:none;padding:14px 36px;font-size:14px;letter-spacing:0.14em;cursor:pointer;font-family:'Noto Serif TC',serif;">送出</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="position:relative;padding:64px 0 40px;overflow:hidden;">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none" style="position:absolute;left:0;right:0;top:0;width:100%;height:100%;opacity:0.5;">
+      <path d="M0,140 L0,90 C240,70 380,96 560,80 C760,62 900,100 1120,84 C1240,76 1340,92 1440,82 L1440,140 Z" fill="var(--ink-4)"/>
+      <path d="M0,140 L0,112 C260,100 420,116 620,104 C820,92 980,114 1200,104 C1300,100 1380,108 1440,104 L1440,140 Z" fill="var(--ink-3)"/>
+    </svg>
+    <div class="container" style="position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div style="font-size:13px;letter-spacing:0.08em;color:var(--ink-2);">© 2026 澤拾 Studio</div>
+      <div style="font-size:13px;letter-spacing:0.1em;color:var(--ink-2);">拾取靈感 × 累積價值</div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
