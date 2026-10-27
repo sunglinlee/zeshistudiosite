@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFC 木片名片｜澤拾 Ze Shi Studio</title>
+<meta name="description" content="澤拾工作室的 NFC 木片名片：木片雷雕搭配 NFC 感應貼紙，手機一碰即開啟專屬連結頁。">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <style>
+    :root{
+      --bg:#F2EFE8;
+      --bg-alt:#EAE4D7;
+      --ink:#2E3D4E;
+      --ink-2:#44586A;
+      --ink-3:#8FA3AF;
+      --ink-4:#C3D0D4;
+      --accent:#B48B52;
+      --line:rgba(46,61,78,0.16);
+      --muted:#6E6A5E;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Serif TC",serif;-webkit-font-smoothing:antialiased;}
+    a{color:var(--ink);text-decoration:none;}
+    a:hover{color:var(--accent);}
+    .en{font-family:"Cormorant Garamond",serif;}
+    .tracked{letter-spacing:0.32em;}
+    .hairline{border:none;border-top:1px solid var(--line);margin:0;}
+    .container{max-width:1180px;margin:0 auto;padding:0 40px;}
+    .eyebrow{font-family:"Cormorant Garamond",serif;letter-spacing:0.38em;font-size:13px;color:var(--ink-2);text-transform:uppercase;}
+    section{position:relative;}
+    .about-grid{display:grid;grid-template-columns:120px 1fr;gap:60px;align-items:start;}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+    .services-grid > div{border-right:1px solid var(--line);}
+    .services-grid > div:last-child{border-right:none;}
+    .works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;}
+    .nav-links{display:flex;gap:36px;}
+    @media (max-width:900px){
+      .container{padding:0 24px;}
+      .about-grid{grid-template-columns:1fr;gap:24px;}
+      .about-grid > div:first-child{writing-mode:horizontal-tb !important;letter-spacing:0.1em !important;font-size:12px !important;}
+      .services-grid{grid-template-columns:1fr;row-gap:56px;}
+      .services-grid > div{border-right:none !important;border-bottom:1px solid var(--line);padding-bottom:44px !important;}
+      .services-grid > div:last-child{border-bottom:none;padding-bottom:0 !important;}
+      .works-grid{grid-template-columns:repeat(2,1fr);}
+      .contact-grid{grid-template-columns:1fr;gap:56px;}
+      .nav-links{gap:20px;}
+      .nav-links a{font-size:12.5px !important;}
+    }
+
+    .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+    .ph{background:var(--ink-4);display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;}
+    .btn{display:inline-block;padding:14px 32px;font-size:14px;letter-spacing:0.14em;border:1px solid var(--ink);color:var(--ink);}
+    .btn:hover{border-color:var(--accent);color:var(--accent);}
+    .btn.solid{background:var(--ink);color:var(--bg);}
+    .btn.solid:hover{background:var(--accent);border-color:var(--accent);color:var(--bg);}
+    .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;}
+    .steps-grid > div{padding:0 32px;border-right:1px solid var(--line);}
+    .steps-grid > div:last-child{border-right:none;}
+    @media (max-width:900px){
+      .product-grid{grid-template-columns:1fr;gap:32px;}
+      .steps-grid{grid-template-columns:1fr;row-gap:36px;}
+      .steps-grid > div{border-right:none;border-bottom:1px solid var(--line);padding:0 0 32px;}
+      .steps-grid > div:last-child{border-bottom:none;padding-bottom:0;}
+    }
+    .nav-links a{white-space:nowrap;}
+    @media (max-width:560px){
+      .brand-text{display:none;}
+      .nav-links{gap:16px !important;}
+      .works-grid{grid-template-columns:1fr;}
+    }
+  </style>
+
+</head>
+<body>
+<div style="width:100%;min-height:100vh;background:var(--bg);overflow-x:hidden;">
+
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(242,239,232,0.86);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:74px;">
+      <a href="../" style="display:flex;align-items:center;gap:14px;">
+        <img src="../logo-mark.png" alt="澤拾 Studio" style="height:34px;width:auto;display:block;">
+        <span class="en tracked brand-text" style="font-size:15px;color:var(--ink);white-space:nowrap;">ZE SHI STUDIO</span>
+      </a>
+      <div class="nav-links">
+        <a href="../#services" style="font-size:14px;letter-spacing:0.08em;">服務</a>
+        <a href="../#products" style="font-size:14px;letter-spacing:0.08em;">商品</a>
+        <a href="../#works" style="font-size:14px;letter-spacing:0.08em;">作品</a>
+        <a href="../#contact" style="font-size:14px;letter-spacing:0.08em;">聯絡</a>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding:150px 0 100px;text-align:center;">
+    <div class="container">
+      <div class="eyebrow">PRODUCT</div>
+      <h1 style="margin:20px 0 0;font-size:clamp(34px,5vw,56px);font-weight:600;letter-spacing:0.06em;">NFC 木片名片</h1>
+      <p style="margin:24px auto 0;font-size:16px;line-height:2;color:var(--muted);max-width:520px;">木片雷雕，中間嵌入 NFC 感應貼紙。手機一碰，就自動開啟專屬連結頁。</p>
+      <div class="ph" style="margin:56px auto 0;max-width:760px;">
+        <span class="en" style="font-size:12px;letter-spacing:0.2em;color:var(--ink-2);">PHOTO&nbsp;COMING&nbsp;SOON</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <section style="padding:110px 0;background:var(--bg-alt);">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="eyebrow">HOW IT WORKS</div>
+        <h2 style="margin:18px 0 0;font-size:clamp(26px,3.4vw,38px);font-weight:600;">怎麼使用</h2>
+      </div>
+      <div class="steps-grid" style="margin-top:64px;text-align:center;">
+        <div>
+          <div class="en" style="font-size:34px;color:var(--accent);">01</div>
+          <h3 style="margin:14px 0 0;font-size:18px;font-weight:600;letter-spacing:0.04em;">手機靠近木片</h3>
+          <p style="margin-top:14px;font-size:14.5px;line-height:1.9;color:var(--muted);">具 NFC 功能的智慧型手機，靠近名片感應位置即可。</p>
+        </div>
+        <div>
+          <div class="en" style="font-size:34px;color:var(--accent);">02</div>
+          <h3 style="margin:14px 0 0;font-size:18px;font-weight:600;letter-spacing:0.04em;">開啟專屬連結頁</h3>
+          <p style="margin-top:14px;font-size:14.5px;line-height:1.9;color:var(--muted);">自動跳出網頁通知，點開就是為你設計的連結頁。</p>
+        </div>
+        <div>
+          <div class="en" style="font-size:34px;color:var(--accent);">03</div>
+          <h3 style="margin:14px 0 0;font-size:18px;font-weight:600;letter-spacing:0.04em;">一鍵前往</h3>
+          <p style="margin-top:14px;font-size:14.5px;line-height:1.9;color:var(--muted);">LINE、Instagram、官網、Email，你指定的連結都放在同一頁。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <section style="padding:110px 0;">
+    <div class="container" style="max-width:760px;">
+      <div style="text-align:center;">
+        <div class="eyebrow">DETAILS</div>
+        <h2 style="margin:18px 0 0;font-size:clamp(26px,3.4vw,38px);font-weight:600;">商品內容</h2>
+      </div>
+      <div style="margin-top:56px;border-top:1px solid var(--line);">
+        <div style="display:flex;gap:32px;padding:26px 0;border-bottom:1px solid var(--line);">
+          <div style="flex:none;width:120px;font-size:14px;letter-spacing:0.1em;color:var(--ink-2);">木片雷雕</div>
+          <div style="font-size:15px;line-height:1.9;color:var(--muted);">以雷射雕刻出你的品牌圖案或文字，木質紋理與刻痕讓每一張都有自己的質感。</div>
+        </div>
+        <div style="display:flex;gap:32px;padding:26px 0;border-bottom:1px solid var(--line);">
+          <div style="flex:none;width:120px;font-size:14px;letter-spacing:0.1em;color:var(--ink-2);">NFC 感應</div>
+          <div style="font-size:15px;line-height:1.9;color:var(--muted);">木片內嵌 NFC 感應貼紙，寫入你專屬連結頁的網址。</div>
+        </div>
+        <div style="display:flex;gap:32px;padding:26px 0;border-bottom:1px solid var(--line);">
+          <div style="flex:none;width:120px;font-size:14px;letter-spacing:0.1em;color:var(--ink-2);">專屬連結頁</div>
+          <div style="font-size:15px;line-height:1.9;color:var(--muted);">依你的品牌風格設計，放上你指定的 LINE、Instagram、官網與聯絡方式。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <section style="padding:110px 0;background:var(--bg-alt);text-align:center;">
+    <div class="container">
+      <div class="eyebrow">DEMO</div>
+      <h2 style="margin:18px 0 0;font-size:clamp(26px,3.4vw,38px);font-weight:600;">看看實際效果</h2>
+      <p style="margin:20px auto 0;font-size:15px;line-height:1.9;color:var(--muted);max-width:460px;">這是澤拾自己的連結頁，也是掃描 NFC 木片後會看到的樣子。</p>
+      <div style="margin-top:36px;"><a class="btn" href="../links/">開啟示範連結頁</a></div>
+    </div>
+  </section>
+
+  <section style="padding:110px 0;text-align:center;">
+    <div class="container">
+      <div class="eyebrow">ORDER</div>
+      <h2 style="margin:18px 0 0;font-size:clamp(26px,3.4vw,38px);font-weight:600;">詢問訂製</h2>
+      <p style="margin:20px auto 0;font-size:15px;line-height:1.9;color:var(--muted);max-width:460px;">想雕刻的圖案、想放的連結，都可以直接來信或透過 LINE 聊聊。</p>
+      <div style="margin-top:36px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a class="btn solid" href="https://line.me/R/ti/p/@370gdwpw" target="_blank" rel="noopener">LINE 官方帳號</a>
+        <a class="btn" href="mailto:zeshistudio@gmail.com">Email 詢問</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="position:relative;padding:40px 0;border-top:1px solid var(--line);">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div style="font-size:13px;letter-spacing:0.08em;color:var(--ink-2);">© 2026 澤拾 Studio</div>
+      <div style="font-size:13px;letter-spacing:0.1em;color:var(--ink-2);">拾取靈感 × 累積價值</div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
