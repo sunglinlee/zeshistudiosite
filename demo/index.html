@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>連結頁風格範例｜澤拾 Ze Shi Studio</title>
+<meta name="description" content="NFC 木片名片專屬連結頁的多種風格範例。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Cormorant+Garamond:wght@400;500&display=swap">
+<style>
+  :root{--bg:#F2EFE8;--ink:#2E3D4E;--ink2:#44586A;--line:rgba(46,61,78,.16);--accent:#B48B52;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Serif TC",serif;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  .container{max-width:1080px;margin:0 auto;padding:0 28px;}
+  header{padding:72px 0 48px;text-align:center;}
+  .eyebrow{font-family:"Cormorant Garamond",serif;letter-spacing:.38em;font-size:13px;color:var(--ink2);}
+  h1{margin:18px 0 0;font-size:clamp(28px,4vw,42px);font-weight:600;letter-spacing:.06em;}
+  header p{margin:18px auto 0;max-width:480px;color:#6E6A5E;line-height:1.9;font-size:15px;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding-bottom:80px;}
+  .card{display:block;border:1px solid var(--line);background:#fff;transition:border-color .2s,transform .2s;}
+  .card:hover{border-color:var(--accent);transform:translateY(-3px);}
+  .sw{aspect-ratio:4/3;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+  .sw span{font-size:28px;letter-spacing:.12em;}
+  .info{padding:20px 22px 24px;}
+  .info h2{margin:0;font-size:18px;font-weight:600;letter-spacing:.06em;}
+  .info p{margin:8px 0 0;font-size:13.5px;line-height:1.8;color:#6E6A5E;}
+  .info em{display:inline-block;margin-top:14px;font-style:normal;font-size:12px;letter-spacing:.18em;color:var(--accent);}
+  .s-ink{background:linear-gradient(180deg,#F2EFE8,#d9e0e2);color:#2E3D4E;}
+  .s-splash{background:#F4F0E6;color:#15130F;font-weight:700;}
+  .s-splash::after{content:"";position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50% 40% 55% 45%;background:#15130F;opacity:.9;}
+  .s-cyber{background:radial-gradient(70% 70% at 50% 0,#5b1458,#07060f 70%);color:#00f0ff;font-family:monospace;text-shadow:0 0 12px #ff2bd6;}
+  .s-ghibli{background:linear-gradient(180deg,#6fb7e8,#cfeaf7 60%,#8fcf7a 60%,#3f8f4f);color:#2f5d3a;font-weight:700;}
+  .s-min{background:#FAFAF8;color:#111;font-family:sans-serif;font-weight:800;}
+  footer{padding:36px 0;text-align:center;font-size:13px;letter-spacing:.1em;color:var(--ink2);border-top:1px solid var(--line);}
+  @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="eyebrow">STYLE GALLERY</div>
+    <h1>連結頁風格範例</h1>
+    <p>NFC 木片名片掃描後開啟的連結頁，可以依你的品牌個性訂製。以下是幾種風格範例，點進去看看實際效果。</p>
+  </header>
+  <div class="grid">
+    <a class="card" href="../links/"><div class="sw s-ink"><span>澤拾</span></div><div class="info"><h2>水墨</h2><p>留白與淡墨，沉靜的東方質感。這是澤拾自己的連結頁。</p><em>VIEW →</em></div></a>
+    <a class="card" href="ink-splash/"><div class="sw s-splash"><span>墨色如歌</span></div><div class="info"><h2>潑墨</h2><p>大塊墨跡與紅色印章，筆觸奔放、視覺衝擊強。</p><em>VIEW →</em></div></a>
+    <a class="card" href="cyberpunk/"><div class="sw s-cyber"><span>NEON</span></div><div class="info"><h2>Cyberpunk</h2><p>霓虹、掃描線與故障特效，適合科技、潮流、夜生活品牌。</p><em>VIEW →</em></div></a>
+    <a class="card" href="ghibli/"><div class="sw s-ghibli"><span>風之小店</span></div><div class="info"><h2>手繪田園（宮崎駿靈感）</h2><p>藍天白雲與綠色丘陵，溫暖手繪感，適合手作、咖啡、親子品牌。</p><em>VIEW →</em></div></a>
+    <a class="card" href="minimal/"><div class="sw s-min"><span>Sample.</span></div><div class="info"><h2>極簡現代</h2><p>大字體與細線條，乾淨俐落，適合顧問、設計、個人品牌。</p><em>VIEW →</em></div></a>
+  </div>
+</div>
+<footer>© 2026 澤拾 Studio ・ <a href="../nfc/">回 NFC 木片名片</a></footer>
+</body>
+</html>
